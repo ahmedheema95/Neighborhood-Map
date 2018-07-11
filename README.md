@@ -12,5 +12,5 @@
  The application can simply run by opening the `index.html` file on any web browser and also in the presence of active internet connection , the application is responsive which means it can run on any screen size dvice including mobile and tablet.
  
  ## Useful Resources
- [Google Maps API](https://console.developers.google.com/apis/)
- [Wikipedia API](https://www.mediawiki.org/wiki/MediaWiki)
+ * [Google Maps API](https://console.developers.google.com/apis/)
+ * [Wikipedia API](https://www.mediawiki.org/wiki/MediaWiki)
