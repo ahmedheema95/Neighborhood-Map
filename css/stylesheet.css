@@ -1,0 +1,149 @@
+/* Main Css Syntax */
+html,body{	
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;	
+}
+
+.container{
+    height: 100%;
+	width: 100%;
+    display: flex;
+ }
+
+#map{   
+    height: 100%;
+    width: 96%;	    
+}
+
+#menubtn{
+	width:4%;
+	background-color:grey;
+}
+
+.related{
+	margin-left:5%;
+	color:#ebeac4;
+}
+
+.leftsidebar{
+	margin-left:10%;
+}
+
+.infowindow{
+	max-width:100%;
+	width: 250px;
+	word-wrap: normal:		
+}
+
+#location-name{
+	color:blue;
+	font-size:85%;
+}
+
+#closebtn{
+	display:none;
+}
+
+#mySidebar{
+	width:230px;
+}
+/******************************************************/
+/************* Responsive Syntax *********************/
+@media screen and (max-width:991px) {
+#closebtn{
+	display:block;
+}
+
+#map{   
+    width: 95%;	    
+}
+
+#menubtn{
+	width:5%;
+}
+
+@media screen and (max-width:910px) {	
+#map{   
+    width: 94%;	    
+}
+
+#menubtn{
+	width:6%;
+}
+}
+	
+@media screen and (max-width:805px) {
+#map{   
+    width: 93%;	    
+}
+
+#menubtn{
+	width:7%;
+}	
+}
+@media screen and (max-width:660px) {
+	
+#map{   
+    width: 92%;	    
+}
+
+#menubtn{
+	width:8%;
+}	
+}
+
+@media screen and (max-width:550px) {
+#map{   
+    width: 90.5%;	    
+}
+
+#menubtn{
+	width:9.5%;
+}	
+}
+
+@media screen and (max-width:470px) {	
+#map{   
+    width: 89%;	    
+}
+
+#menubtn{
+	width:11%;
+}	
+}
+
+@media screen and (max-width:470px) {
+#map{   
+    width: 88%;	    
+}
+
+#menubtn{
+	width:12%;
+}	
+}
+
+@media screen and (max-width:360px) {
+#map{   
+    width: 85%;	    
+}
+
+#menubtn{
+	width:15%;
+}	
+
+.infowindow{
+	width: 200px;		
+}
+}
+
+@media screen and (max-width:305px) {	
+#map{   
+    width: 83%;	    
+}
+
+#menubtn{
+	width:17%;
+}	
+}
