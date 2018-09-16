@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neighborhood Map Udacity</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset=UTF-8> 	
+</head>
+<body>
+   <div class="container">
+	<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-dark-grey" id="mySidebar">
+                <input  value="" placeholder="Search" type="search" name="filter" data-bind="textInput: query">
+				<div class="related"><h4>Places</h4></div>
+                <div data-bind="foreach: searchResults" class="leftsidebar">
+					<a href="#" class="w3-bar-item w3-button" data-bind="text: name, click: $root.clickLocation"></a>
+                </div>       
+				<div class="related"><h4>Related Keywords</h4></div>
+					<div data-bind="foreach: wikiLinks" class="leftsidebar">
+						<a href="#" class="w3-bar-item w3-button" data-bind="html: $data"></a>
+					</div>
+				  <div id="closebtn"><button class="w3-button w3-red" onclick="w3_close()">Close Menu  &times;</button></div>					
+				</div>
+	<div id="menubtn"><button class="w3-button w3-grey w3-xlarge" onclick="w3_open()">&#9776;</button></div>				
+	<div id="map"></div>
+   </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/script_app.js"></script>
+	<script defer src="js/menu_app.js"></script>	
+    <script async defer onerror="maperror()"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUXpZatpxYtvh293P1WfXbVk6MKfzgOo4&v=3&callback=initMap">
+    </script>
+</body>
+</html>
